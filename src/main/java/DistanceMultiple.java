@@ -37,7 +37,7 @@ public class DistanceMultiple {
         int n = in.nextInt();
 
         for (int i = 1; i <= n; i++) {
-            System.out.print("Enter input: ", i);
+            System.out.print("Enter input: ");
             in.useDelimiter("[(),\\s]+");
 
             double x1 = in.nextDouble();
