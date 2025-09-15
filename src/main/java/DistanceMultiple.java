@@ -29,11 +29,28 @@
 
 import java.util.Scanner;
 
-
 public class DistanceMultiple {
     public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
 
+        System.out.print("How many inputs? ");
+        int n = in.nextInt();
 
+        for (int i = 1; i <= n; i++) {
+            System.out.printf("Enter input %d (like (x1,y1)(x2,y2)): ", i);
+            in.useDelimiter("[(),\\s]+");
+
+            double x1 = in.nextDouble();
+            double y1 = in.nextDouble();
+            double x2 = in.nextDouble();
+            double y2 = in.nextDouble();
+
+            double dx = x2 - x1;
+            double dy = y2 - y1;
+
+            double distance = Math.sqrt(dx * dx + dy * dy);
+
+            System.out.println(distance);
+        }
     }
-
 }
