@@ -45,7 +45,7 @@ public class DistanceMultiple {
             double x2 = in.nextDouble();
             double y2 = in.nextDouble();
 
-            double dx = x2 - x1 + x1 + x2;
+            double dx = x2 - x1;
             double dy = y2 - y1;
 
             double distance = Math.sqrt(dx * dx + dy * dy);
