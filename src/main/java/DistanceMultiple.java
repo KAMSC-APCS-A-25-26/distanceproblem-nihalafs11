@@ -37,7 +37,7 @@ public class DistanceMultiple {
         int n = in.nextInt();
 
         for (int i = 1; i <= n; i++) {
-            System.out.printf("Enter input %d (like (x1,y1)(x2,y2)): ", i);
+            System.out.print("Enter input: ", i);
             in.useDelimiter("[(),\\s]+");
 
             double x1 = in.nextDouble();
@@ -45,7 +45,7 @@ public class DistanceMultiple {
             double x2 = in.nextDouble();
             double y2 = in.nextDouble();
 
-            double dx = x2 - x1;
+            double dx = x2 - x1 + x1 + x2;
             double dy = y2 - y1;
 
             double distance = Math.sqrt(dx * dx + dy * dy);
